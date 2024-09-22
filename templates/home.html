@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="icon" href="https://storage.googleapis.com/lazy-icons/not-found-placeholder.webp" type="image/x-icon">
+    <title>CRM Dashboard</title>
+  </head>
+  <body>
+    {% include 'partials/_header.html' %}
+    <div class="main-content">
+      <div class="dashboard-container">
+        <div class="widget revenue-widget">
+          <h3>Revenue</h3>
+          <div class="revenue-chart" id="revenueChart"></div>
+        </div>
+        <div class="widget pipeline-widget">
+          <h3>Sales Pipeline</h3>
+          <div class="pipeline-chart" id="pipelineChart"></div>
+        </div>
+        <div class="widget clients-widget">
+          <h3>New Clients/Leads</h3>
+          <div class="clients-stats" id="clientsStats"></div>
+        </div>
+        <div class="widget productivity-widget">
+          <h3>Team Productivity</h3>
+          <div class="productivity-stats" id="productivityStats"></div>
+        </div>
+        <div class="widget alerts-widget">
+          <h3>Alerts & Notifications</h3>
+          <ul class="alerts-list" id="alertsList"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="/static/js/home.js"></script>
+  </body>
+</html>
